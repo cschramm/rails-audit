@@ -1,0 +1,4 @@
+Rails: false
+
+Cane:
+  Parameters: --no-doc
