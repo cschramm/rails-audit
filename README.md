@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/rails-audit.png)](http://badge.fury.io/rb/rails-audit)
+
 # Rails Audit
 
 Runs multiple audit and review tools to ensure quality and security of
