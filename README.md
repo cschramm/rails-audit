@@ -26,6 +26,10 @@ Rails support may be disabled. Only pure Ruby audits are then executed:
 
     Rails: false
 
+To improve output to the expense of time concurreny can be disabled:
+
+    Concurrency: false
+
 ### [Brakeman](http://brakemanscanner.org/)
 
 Brakeman is a security scanner for Rails.

@@ -17,7 +17,9 @@ module RailsAudit
   def self.run
     config = load_config
 
-    failures = run_threads config
+    concurrency = config['Concurrency'].nil? && true || config['Concurrency']
+
+    failures = concurrency && run_threads(config) || run_sequence(config)
 
     if failures.any?
       puts 'Failed tests:'
@@ -25,6 +27,17 @@ module RailsAudit
     end
 
     failures.none?
+  end
+
+  def self.run_sequence(config)
+    failures = []
+
+    Audits::ALL.each do |audit|
+      success = audit.run get_config(config, audit.get_name)
+      failures << audit.get_name unless success
+    end
+
+    failures
   end
 
   def self.run_threads(config)
