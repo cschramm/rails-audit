@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/rails-audit.png)](http://badge.fury.io/rb/rails-audit)
+[![Dependency Status](https://gemnasium.com/cschramm/rails-audit.png)](https://gemnasium.com/cschramm/rails-audit)
 
 # Rails Audit
 
