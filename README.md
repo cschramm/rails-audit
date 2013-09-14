@@ -11,6 +11,10 @@ Rails projects
     gem install rails-audit
     rails-audit
 
+Minor versions of the audit tools are fixed for a specific version of this gem.
+Apart from bug fixes in those tools, the code audit results should thus not
+vary if a specific version of this gem is included in a project's bundle.
+
 ## Audits
 
 Additional parameters can be passed to any audit's binary by using an .audit.yml
