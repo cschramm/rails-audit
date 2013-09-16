@@ -15,13 +15,20 @@ Minor versions of the audit tools are fixed for a specific version of this gem.
 Apart from bug fixes in those tools, the code audit results should thus not
 vary if a specific version of this gem is included in a project's bundle.
 
-## Audits
+## Configuration
 
 Additional parameters can be passed to any audit's binary by using an .audit.yml
 file. A configuration for cane could look like the following:
 
     Cane:
       Parameters: '--style-measure 120 --no-doc'
+
+This can also be used to extend the command and e.g. redirect the output.
+(WARNING: This hase obvious security implications!) Suppressing the
+license_finder spinner, which is a good idea in CI, would work like this:
+
+    LicenseFinder:
+      Paramters: '>/dev/null'
 
 The audits' names are camel cased in the configuration file. They may be
 disabled like this:
@@ -36,6 +43,8 @@ Rails support may be disabled. Only pure Ruby audits are then executed:
 To improve output to the expense of time concurreny can be disabled:
 
     Concurrency: false
+
+## Audits
 
 ### [Brakeman](http://brakemanscanner.org/)
 
