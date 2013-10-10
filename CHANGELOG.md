@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* New rubocop version 0.14.1
+
 ## 0.12.1
 
 * Fix rubocop version to 0.14.0
