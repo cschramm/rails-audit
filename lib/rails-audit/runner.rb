@@ -44,12 +44,14 @@ module RailsAudit
     failures = []
     mutex = Mutex.new
 
-    Audits::ALL.map do |audit|
+    threads = Audits::ALL.map do |audit|
       Thread.new do
         success = audit.run get_config(config, audit.get_name)
         mutex.synchronize { failures << audit.get_name unless success }
       end
-    end.each { |t| t.join }
+    end
+
+    threads.each { |t| t.join }
 
     failures
   end
