@@ -2,4 +2,4 @@
 
 require 'rails-audit'
 
-exit(1) unless RailsAudit.run
+exit(1) unless RailsAudit::Runner.new.run
