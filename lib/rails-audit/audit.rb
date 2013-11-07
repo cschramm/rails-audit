@@ -1,6 +1,5 @@
 module RailsAudit
   class Audit
-
     def self.command(rails)
       self::COMMAND
     end
@@ -13,6 +12,5 @@ module RailsAudit
     def self.get_name
       name.split('::')[-1]
     end
-
   end
 end
