@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.20.0
 
 * New rails_best_practices version 1.15
 
