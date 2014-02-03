@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* New rails_best_practices version 1.15
+
 ## 0.19.1
 
 * New rubocop version 0.18.1
