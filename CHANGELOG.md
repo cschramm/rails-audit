@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.19.1
 
 * New rubocop version 0.18.1
 * Revert to relaxed rubocop dependency
