@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* New brakeman version 2.4
+
 ## 0.20.0
 
 * New rails_best_practices version 1.15
