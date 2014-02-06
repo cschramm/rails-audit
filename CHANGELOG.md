@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.21.0
 
 * New brakeman version 2.4
 
