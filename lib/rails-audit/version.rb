@@ -1,7 +1,7 @@
 module RailsAudit
   class Version
     MAJOR = 0
-    MINOR = 21
+    MINOR = 22
     PATCH = 0
 
     def self.to_s
