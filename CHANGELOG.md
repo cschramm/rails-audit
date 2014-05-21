@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.26.0
 
 * New rubocop version 0.22
 
