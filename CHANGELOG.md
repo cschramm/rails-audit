@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* New rubocop version 0.24
+
 ## 0.28.0
 
 * New brakeman version 2.6
