@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.39.0
+
+* New rubocop version 0.33
+
 ## 0.38.0
 
 * New rubocop version 0.32
