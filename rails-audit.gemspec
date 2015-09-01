@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'bundler'
 
-  s.add_runtime_dependency 'brakeman', '~> 3.0.0'
+  s.add_runtime_dependency 'brakeman', '~> 3.1.0'
   s.add_runtime_dependency 'bundler-audit'
   s.add_runtime_dependency 'cane', '~> 2.6.0'
   s.add_runtime_dependency 'consistency_fail'
