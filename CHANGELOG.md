@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.45.0
+
+* New rubocop version 0.38
+* New cane version 3.0
+
 ## 0.44.0
 
 * New rubocop version 0.37
