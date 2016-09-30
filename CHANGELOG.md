@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.49.0
+
+* New rubocop version 0.43
+* New brakeman version 3.4
+
 ## 0.48.0
 
 * New rubocop version 0.41
