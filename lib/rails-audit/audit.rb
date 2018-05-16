@@ -6,7 +6,7 @@ module RailsAudit
 
     def self.run(config)
       return true unless config[:enabled] && (config[:rails] || !self::RAILS)
-      system "bundle exec #{command config[:rails]} #{config[:params]}"
+      system "#{command config[:rails]} #{config[:params]}"
     end
 
     def self.name
