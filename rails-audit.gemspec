@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version     = RailsAudit::Version.to_s
   s.platform    = Gem::Platform::RUBY
   s.author      = 'Christopher Schramm'
-  s.email       = 'cschramm@shakaweb.org'
+  s.email       = 'rails-audit@cschramm.eu'
   s.homepage    = 'https://github.com/cschramm/rails-audit'
   s.description = %q{
     Runs multiple audit and review tools to ensure quality and security of
@@ -27,11 +27,11 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'bundler'
 
-  s.add_runtime_dependency 'brakeman', '~> 3.4.0'
+  s.add_runtime_dependency 'brakeman', '~> 4.3.0'
   s.add_runtime_dependency 'bundler-audit'
   s.add_runtime_dependency 'cane', '~> 3.0.0'
   s.add_runtime_dependency 'consistency_fail'
   s.add_runtime_dependency 'license_finder'
-  s.add_runtime_dependency 'rails_best_practices', '~> 1.15.0'
-  s.add_runtime_dependency 'rubocop', '~> 0.44.0'
+  s.add_runtime_dependency 'rails_best_practices', '~> 1.19.2'
+  s.add_runtime_dependency 'rubocop', '~> 0.56.0'
 end
