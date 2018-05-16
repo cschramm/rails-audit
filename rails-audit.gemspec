@@ -1,26 +1,24 @@
-# -*- encoding: utf-8 -*-
-require File.expand_path('../lib/rails-audit/version', __FILE__)
+require File.expand_path('lib/rails-audit/version', __dir__)
 
-Gem::Specification.new do |s|
+Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.name        = 'rails-audit'
   s.version     = RailsAudit::Version.to_s
   s.platform    = Gem::Platform::RUBY
   s.author      = 'Christopher Schramm'
   s.email       = 'rails-audit@cschramm.eu'
   s.homepage    = 'https://github.com/cschramm/rails-audit'
-  s.description = %q{
+  s.description = %(
     Runs multiple audit and review tools to ensure quality and security of
     Rails projects
-  }
-  s.summary     = %q{
-    Runs multiple audit and review tools to ensure quality and security of
-    Rails projects
-  }
+  )
+  s.summary     = s.description
   s.licenses    = ['MIT']
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = %w(lib)
+  s.executables = `git ls-files -- bin/*`.split("\n").map do |f|
+    File.basename(f)
+  end
+  s.require_paths = %w[lib]
   s.extra_rdoc_files = ['README.md']
 
   s.add_development_dependency 'rake'

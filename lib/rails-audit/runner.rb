@@ -4,9 +4,8 @@ module RailsAudit
   class Runner
     def initialize
       @config = { 'Concurrency' => true, 'Rails' => true }
-      if File.exist? 'config/audit.yml'
-        @config = @config.merge YAML.load_file('config/audit.yml')
-      end
+      return unless File.exist? 'config/audit.yml'
+      @config = @config.merge YAML.load_file('config/audit.yml')
     end
 
     def get_config(name)
@@ -36,8 +35,8 @@ module RailsAudit
       failures = []
 
       Audits::ALL.each do |audit|
-        success = audit.run get_config(audit.get_name)
-        failures << audit.get_name unless success
+        success = audit.run get_config(audit.name)
+        failures << audit.name unless success
       end
 
       failures
@@ -49,12 +48,12 @@ module RailsAudit
 
       threads = Audits::ALL.map do |audit|
         Thread.new do
-          success = audit.run get_config(audit.get_name)
-          mutex.synchronize { failures << audit.get_name unless success }
+          success = audit.run get_config(audit.name)
+          mutex.synchronize { failures << audit.name unless success }
         end
       end
 
-      threads.each { |t| t.join }
+      threads.each(&:join)
 
       failures
     end

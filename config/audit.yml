@@ -2,3 +2,6 @@ Rails: false
 
 Cane:
   Parameters: --no-doc
+
+LicenseFinder:
+  Enabled: false

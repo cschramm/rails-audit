@@ -1,6 +1,6 @@
 module RailsAudit
   class Audit
-    def self.command(rails)
+    def self.command(_rails)
       self::COMMAND
     end
 
@@ -9,8 +9,8 @@ module RailsAudit
       system "bundle exec #{command config[:rails]} #{config[:params]}"
     end
 
-    def self.get_name
-      name.split('::')[-1]
+    def self.name
+      super.split('::')[-1]
     end
   end
 end

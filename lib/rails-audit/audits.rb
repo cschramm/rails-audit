@@ -8,6 +8,6 @@ module RailsAudit
       LicenseFinder,
       RailsBestPractices,
       Rubocop
-    ]
+    ].freeze
   end
 end
