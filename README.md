@@ -1,5 +1,4 @@
 [![Gem Version](https://badge.fury.io/rb/rails-audit.png)](http://badge.fury.io/rb/rails-audit)
-[![Dependency Status](https://gemnasium.com/cschramm/rails-audit.png)](https://gemnasium.com/cschramm/rails-audit)
 [![Code Climate](https://codeclimate.com/github/cschramm/rails-audit.png)](https://codeclimate.com/github/cschramm/rails-audit)
 
 # Rails Audit
@@ -18,14 +17,14 @@ vary if a specific version of this gem is included in a project's bundle.
 
 ## Configuration
 
-Additional parameters can be passed to any audit's binary by using an .audit.yml
-file. A configuration for cane could look like the following:
+Additional parameters can be passed to any audit's binary by using a
+config/audit.yml file. A configuration for cane could look like the following:
 
     Cane:
       Parameters: '--style-measure 120 --no-doc'
 
 This can also be used to extend the command and e.g. redirect the output.
-(WARNING: This hase obvious security implications!) Suppressing the
+(WARNING: Thi hase obvious security implications!) Suppressing the
 license_finder spinner, which is a good idea in CI, would work like this:
 
     LicenseFinder:
