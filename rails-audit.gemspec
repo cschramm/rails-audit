@@ -25,11 +25,11 @@ Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
 
   s.add_dependency 'bundler'
 
-  s.add_runtime_dependency 'brakeman', '~> 4.3.0'
+  s.add_runtime_dependency 'brakeman', '~> 4.5.0'
   s.add_runtime_dependency 'bundler-audit'
   s.add_runtime_dependency 'cane', '~> 3.0.0'
   s.add_runtime_dependency 'consistency_fail'
   s.add_runtime_dependency 'license_finder'
-  s.add_runtime_dependency 'rails_best_practices', '~> 1.19.2'
-  s.add_runtime_dependency 'rubocop', '~> 0.56.0'
+  s.add_runtime_dependency 'rails_best_practices', '~> 1.19.4'
+  s.add_runtime_dependency 'rubocop', '~> 0.66.0'
 end
