@@ -5,6 +5,7 @@ module RailsAudit
     def initialize
       @config = { 'Concurrency' => true, 'Rails' => true }
       return unless File.exist? 'config/audit.yml'
+
       @config = @config.merge YAML.load_file('config/audit.yml')
     end
 

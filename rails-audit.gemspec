@@ -1,6 +1,6 @@
 require File.expand_path('lib/rails-audit/version', __dir__)
 
-Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
+Gem::Specification.new do |s|
   s.name        = 'rails-audit'
   s.version     = RailsAudit::Version.to_s
   s.platform    = Gem::Platform::RUBY
