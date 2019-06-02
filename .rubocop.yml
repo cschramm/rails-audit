@@ -1,2 +1,4 @@
 Documentation:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
