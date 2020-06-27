@@ -25,11 +25,11 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'bundler'
 
-  s.add_runtime_dependency 'brakeman', '~> 4.5.0'
+  s.add_runtime_dependency 'brakeman', '~> 4.8.2'
   s.add_runtime_dependency 'bundler-audit'
   s.add_runtime_dependency 'cane', '~> 3.0.0'
   s.add_runtime_dependency 'consistency_fail'
   s.add_runtime_dependency 'license_finder'
-  s.add_runtime_dependency 'rails_best_practices', '~> 1.19.4'
-  s.add_runtime_dependency 'rubocop', '~> 0.72.0'
+  s.add_runtime_dependency 'rails_best_practices', '~> 1.20.0'
+  s.add_runtime_dependency 'rubocop', '~> 0.86.0'
 end
