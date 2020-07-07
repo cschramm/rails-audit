@@ -31,5 +31,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'consistency_fail'
   s.add_runtime_dependency 'license_finder'
   s.add_runtime_dependency 'rails_best_practices', '~> 1.20.0'
-  s.add_runtime_dependency 'rubocop', '~> 0.86.0'
+  s.add_runtime_dependency 'rubocop', '~> 0.87.0'
 end
