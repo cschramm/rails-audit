@@ -71,8 +71,8 @@ Approval and whitelisting is done through the license\_finder binary.
 
 rails\_best\_practices checks code for violations of the [Rails Best Practices list](http://rails-bestpractices.com/). Configuration is done in the rails\_best\_practices.yml file, which can be generated using `rails_best_practices -g`.
 
-### [Rubocop](https://github.com/bbatsov/rubocop)
+### [RuboCop](https://github.com/bbatsov/rubocop)
 
-Rubocop checks code for violations of the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide). Configuration is done in the .rubocop.yml file.
+RuboCop checks code for violations of the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide). Configuration is done in the .rubocop.yml file.
 Rails cops are included automatically depending on whether or not Rails audits
 are enabled.
